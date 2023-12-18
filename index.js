@@ -3,12 +3,12 @@ import bodyParser  from "body-parser";
 import axios from "axios";
 import apikey from "./secret.js";
 
-console.log(apikey);
+// console.log(apikey);
 const app = express();
 const port = 3000;
 
 const myApi = apikey;
-console.log(myApi);
+// console.log(myApi);
 let code = "us";
 let headers ={
     'X-Api-Key': myApi,
