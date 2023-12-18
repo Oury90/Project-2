@@ -1,14 +1,17 @@
 import express from "express";
 import bodyParser  from "body-parser";
 import axios from "axios";
+import apikey from "./secret.js";
 
-
+console.log(apikey);
 const app = express();
 const port = 3000;
 
+const myApi = apikey;
+console.log(myApi);
 let code = "us";
 let headers ={
-    'X-Api-Key': '35abd19df7664a0391cc4e5f7fffa94b',
+    'X-Api-Key': myApi,
 };
 
 
